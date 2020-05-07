@@ -27,4 +27,6 @@
   - `utils.js` - Contains miscellanous functions
 - All your modules should be placed in an `app` directory in the `js` folder
 
+**Your task is to figure out how to use ES6 import syntax to export functions when necessary and import them elsewhere.**
+
 > The app should behave exactly the same after you breaking the code ;)
