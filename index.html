@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap initiation</title>
+
+  <!-- Add here the link to Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    rel="stylesheet">
+  <style type="text/css">
+    main {
+      margin-top: 70px;
+    }
+
+    .list-group-item {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand fixed-top bg-dark">
+    <div class="container">
+      <a href="#"
+        class="navbar-brand">DiaLog</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link"
+              href="#">Intro</a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="#">Download</a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active"
+          href="#">My DiaLogs <span class="badge badge-info">5</span></a></li>
+        <a class="nav-item nav-link"
+          href="#">My Account</a>
+        <a class="nav-item nav-link"
+          href="#">Settings</a>
+      </div>
+      <button class="btn btn-success">Log out</button>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <section class="col-4">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4>James Doohan</h4>
+              <small>Yesterday at 18:32</small>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <span>lmao XD</span>
+              <span class="badge badge-secondary">6</span>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action active">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4>Ken Bogard</h4>
+              <small>Today at 13:16</small>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <span>Wanna come'n play some SFV?!</span>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4>Dad</h4>
+              <small>Yesterday at 19:33</small>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <span>Yea... I'm coming, dad...</span>
+              <span class="badge badge-secondary">1</span>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4>Levar Burton</h4>
+              <small>Today at 07:12</small>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <span>Dude! Logan's awesome!</span>
+              <span class="badge badge-secondary">5</span>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h4>Tasha Yar</h4>
+              <small>Yesterday at 21:41</small>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <span>See you on the other side</span>
+              <span class="badge badge-secondary">1</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="col-8">
+        <div class="card">
+          <div class="card-header bg-dark text-light d-flex justify-content-between align-items-center">
+            <span><small>Dialog with</small> <strong>Ken Bogard</strong></span>
+            <button class="btn btn-link btn-sm text-light">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </div>
+          <div class="card-body"
+            id="dialog">
+            <div class="row">
+              <div class="col-8">
+                <div class="alert alert-success">
+                  <div class="d-flex align-items-center">
+                    <div class="msg-content flex-grow-1 mr-2">Hi there!</div>
+                    <div>
+                      <small class="text-info">12:57</small>
+                      <button class="btn btn-link btn-sm">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 offset-4">
+                <div class="alert alert-warning">
+                  <div class="d-flex align-items-center">
+                    <div class="msg-content flex-grow-1 mr-2">
+                      Hey, hello you!<br>
+                      What's up?
+                    </div>
+                    <div>
+                      <small class="text-info">13:05</small>
+                      <button class="btn btn-link btn-sm">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="alert alert-success">
+                  <div class="d-flex align-items-center">
+                    <div class="msg-content flex-grow-1 mr-2">
+                      Same old, same old.<br>
+                      Wanna come'n play some SFV?!
+                    </div>
+                    <div>
+                      <small class="text-info">13:16</small>
+                      <button class="btn btn-link btn-sm">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control text-left"
+                  id="message"
+                  rows="3"
+                  placeholder="New message"></textarea>
+              </div>
+              <div class="btn-group btn-group-sm"
+                id="align-btns">
+                <button class="btn btn-outline-secondary active">
+                  <i class="fas fa-align-left"></i>
+                </button>
+                <button class="btn btn-outline-secondary">
+                  <i class="fas fa-align-center"></i>
+                </button>
+                <button class="btn btn-outline-secondary">
+                  <i class="fas fa-align-right"></i>
+                </button>
+              </div>
+              <button class="btn btn-success float-right btn-sm"
+                id="send-btn">
+                <i class="far fa-paper-plane"></i>
+                Send!
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="navbar navbar-light fixed-bottom bg-light">
+    <div class="container d-flex justify-content-between">
+      <button class="btn btn-outline-info">Privacy &amp; Terms</button>
+      <span class="navbar-text">&copy; 2020 - Mathias Oberson</span>
+    </div>
+  </footer>
+  <script src="./js/script.js"
+    type="module"></script>
+</body>
+
+</html>
