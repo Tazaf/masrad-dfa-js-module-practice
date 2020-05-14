@@ -18,15 +18,16 @@
 
 ## What you need to do
 
-- Break down the code in `js/scripts.js` into separate modules :
+- Split the code in `js/scripts.js` into separate modules :
   - `alignment.js` - Contains functions related to alignment features
-  - `dialogs.js` - Contains functions related to the DiaLog list
-  - `messages.js` - Contains functions related to managing messages
+  - `dialogs.js` - Contains functions for managing DiaLog lists
+  - `messages.js` - Contains functions for managing messages
   - `setup.js` - Contains functions that sets up the app event listeners
   - `templates.js` - Contains functions related to template management
   - `utils.js` - Contains miscellanous functions
 - All your modules should be placed in an `app` directory in the `js` folder
+- In the end, the `js/script.js` file should only call whatever is exported by the `js/app/setup.js` file to set up the application code.
 
-**Your task is to figure out how to use ES6 import syntax to export functions when necessary and import them elsewhere.**
+**Your task is to figure out how to use ES6 module syntax to export functions (if necessary) and import them where they are needed.**
 
-> The app should behave exactly the same after you breaking the code ;)
+> The app should obviously behave exactly the same after you split the code ;)
